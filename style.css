@@ -1,0 +1,296 @@
+body {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw; }
+
+#topBar {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1.5vh;
+  overflow: hidden; }
+
+#bar {
+  transition: all 2s; }
+
+.yellow {
+  fill: #e8c546;
+  transition: all 2s; }
+
+.red {
+  fill: #db2d2c;
+  transition: all 2s; }
+
+.pink {
+  fill: #e1678e;
+  transition: all 2s; }
+
+.blue {
+  fill: #1a367f;
+  transition: all 2s; }
+
+.blue:hover {
+  transform: translateX(4.6875rem); }
+
+.pink:hover {
+  transform: translateX(4.6875rem); }
+
+.yellow:hover + .red {
+  transform: translateX(-4.6875rem); }
+
+.red:hover {
+  transform: translateX(4.6875rem); }
+
+#text {
+  top: 3vh;
+  z-index: 5;
+  position: relative;
+  height: 100vh;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  #text svg {
+    height: 90%; }
+  #text .blondText {
+    stroke-width: 1.25; }
+
+.firstB {
+  stroke: #e8c546;
+  opacity: 0; }
+
+.secondB {
+  stroke: #db2d2c;
+  opacity: 0; }
+
+.thirdB {
+  stroke: #e1678e;
+  opacity: 0; }
+
+.fourthB {
+  opacity: 1; }
+
+.fifthB {
+  stroke: #1a367f;
+  opacity: 0; }
+
+.sixthB {
+  opacity: 0; }
+
+#bottom {
+  height: 10vh;
+  z-index: 10;
+  position: fixed;
+  bottom: 0vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+  #bottom .button {
+    width: 45%; }
+
+#ticketsTop, #ticketsBot {
+  fill: none;
+  stroke-miterlimit: 10;
+  stroke-width: 2px; }
+
+#ticketsTop {
+  stroke: #000; }
+
+#ticketsBot {
+  stroke: #000; }
+
+.ticketsText {
+  font-size: 26px;
+  font-family: "Roboto Mono";
+  text-align: center; }
+
+svg.button:hover #ticketsTop {
+  transform: translate(0px); }
+
+svg.button:hover #ticketsBot {
+  transform: translate(0px); }
+
+#ticketsBot {
+  transition: all .2s ease-in-out;
+  transform: translate(-6.1px, -10.4px); }
+
+#ticketsTop {
+  transition: all .2s ease-in-out;
+  transform: translate(6.1px, 10.4px); }
+
+#graphic.hidden {
+  opacity: 0; }
+
+#graphic {
+  margin: auto 0;
+  opacity: 1;
+  position: absolute;
+  height: 90%;
+  width: 100%;
+  top: 7vh;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  #graphic svg {
+    width: 70%;
+    position: relative;
+    bottom: 5vh; }
+
+#muteButton {
+  z-index: 12;
+  width: 100%;
+  position: fixed;
+  top: 2vh;
+  right: -45vh;
+  height: 5vh; }
+  #muteButton svg {
+    width: 15%;
+    height: 100%; }
+  #muteButton #muteLine {
+    transition: all .25s ease-in-out; }
+  #muteButton #muteLine.hidden {
+    opacity: 0; }
+
+@media screen and (min-width: 35rem) {
+  #text {
+    top: 3vh;
+    width: 70%; }
+
+  #graphic svg {
+    width: 60%; }
+
+  #muteButton {
+    top: 2vh;
+    right: -55vh;
+    height: 5vh; }
+    #muteButton svg {
+      width: 10%;
+      height: 100%; } }
+@media screen and (min-width: 40rem) {
+  #text {
+    top: 0vh;
+    width: 70%; }
+
+  #graphic svg {
+    width: 55%; }
+
+  #muteButton {
+    top: 1vh;
+    right: -65vh;
+    height: 5vh; }
+    #muteButton svg {
+      width: 10%;
+      height: 100%; } }
+@media screen and (min-width: 45rem) {
+  #graphic svg {
+    width: 50%; }
+
+  #bottom .button {
+    width: 35%; }
+
+  #muteButton {
+    top: 1vh;
+    right: -75vh;
+    height: 5vh; }
+    #muteButton svg {
+      width: 8%;
+      height: 100%; } }
+@media screen and (min-width: 47rem) {
+  #graphic svg {
+    width: 46%; }
+
+  #bottom .button {
+    width: 30%; }
+
+  #muteButton {
+    top: 1vh;
+    right: -80vh;
+    height: 5vh; }
+    #muteButton svg {
+      width: 8%;
+      height: 100%; } }
+@media screen and (min-width: 50rem) {
+  #graphic svg {
+    width: 42%; }
+
+  #muteButton {
+    top: 1vh;
+    right: -85vh;
+    height: 5vh; }
+    #muteButton svg {
+      width: 7%;
+      height: 100%; } }
+@media screen and (min-width: 58rem) {
+  #graphic svg {
+    width: 38%; }
+
+  #bottom .button {
+    width: 25%; }
+
+  #muteButton {
+    top: 1vh;
+    right: -100vh;
+    height: 5vh; }
+    #muteButton svg {
+      width: 6%;
+      height: 100%; } }
+@media screen and (min-width: 65rem) {
+  #graphic svg {
+    width: 35%; }
+
+  #muteButton {
+    top: 1vh;
+    right: -110vh;
+    height: 5vh; }
+    #muteButton svg {
+      width: 5%;
+      height: 100%; } }
+@media screen and (min-width: 70rem) {
+  #graphic svg {
+    width: 25%; }
+
+  #muteButton {
+    top: 1vh;
+    right: -125vh;
+    height: 5vh; }
+    #muteButton svg {
+      width: 5%;
+      height: 100%; } }
+@media screen and (min-width: 75rem) {
+  #graphic svg {
+    width: 30%; }
+
+  #bottom .button {
+    width: 20%; }
+
+  #muteButton {
+    top: 1vh;
+    right: -135vh;
+    height: 5vh; }
+    #muteButton svg {
+      width: 5%;
+      height: 100%; } }
+@media screen and (min-width: 85rem) {
+  #graphic svg {
+    width: 25%; }
+
+  #bottom .button {
+    width: 15%; }
+
+  #muteButton {
+    top: 1vh;
+    right: -145vh;
+    height: 5vh; }
+    #muteButton svg {
+      width: 3%;
+      height: 100%; } }
+
+/*# sourceMappingURL=style.css.map */

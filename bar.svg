@@ -1,0 +1,8 @@
+<?xml-stylesheet type="text/css" href="master.css"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <title>bar</title>
+    <rect class="yellow" width="300" height="300"/>
+    <rect class="red" x="75" width="300" height="300"/>
+    <rect class="pink" x="150" width="300" height="300"/>
+    <rect class="blue" x="225" width="300" height="300"/>
+</svg>

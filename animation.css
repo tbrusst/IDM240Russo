@@ -1,0 +1,168 @@
+@keyframes firstB {
+  0% {
+    opacity: 0;
+  }
+  16.67% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.firstB {
+   animation: firstB 5.5s forwards;
+}
+
+
+
+
+@keyframes secondB {
+  0% {
+    opacity: 0;
+  }
+  33.33% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.secondB {
+   animation: secondB 5.5s forwards;
+}
+
+
+
+
+
+
+@keyframes thirdB {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.thirdB {
+   animation: thirdB 5.5s forwards;
+}
+
+
+
+
+
+@keyframes fourthB {
+  0% {
+    opacity: 0;
+  }
+  66.67% {
+    opacity: 1;
+    /*fill: rgba(0,0,0,0);*/
+  }
+  100% {
+    opacity: 1;
+    /*fill: #000;*/
+  }
+}
+
+.fourthB {
+   animation: fourthB 5.5s forwards;
+}
+
+
+
+
+
+
+@keyframes fifthB {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  87%,100% {
+    opacity: 0;
+  }
+}
+
+.fifthB {
+   animation: fifthB 5.5s forwards;
+
+}
+
+
+
+
+
+
+.sixthB {
+   opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes upperFrank {
+  0%,70% {
+    transform: translateY(.25vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px;);
+    opacity: 1;
+  }
+}
+
+#upperFrank {
+   animation: upperFrank 5s forwards;
+}
+
+@keyframes lowerFrank {
+  0%,65% {
+    transform: translateY(-.25vh);
+    opacity: 0;
+  }
+  95%,100% {
+    transform: translateY(0px;);
+    opacity: 1;
+  }
+}
+
+#lowerFrank {
+   animation: lowerFrank 5s forwards;
+}
+
+
+
+#bottom {
+  animation: bottom 6s forwards;
+
+}
+
+@keyframes bottom {
+  0%,70% {
+    transform: translateY(.25vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px;);
+    opacity: 1;
+  }
+}
