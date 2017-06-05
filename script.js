@@ -27,3 +27,17 @@ audio.onplaying = function() {
 audio.onpause = function() {
   playing = false;
 };
+
+
+
+
+
+var body = document.getElementById('body');
+
+
+
+
+DomReady.ready(function() {
+  document.getElementById('text').classList.remove('active');
+
+});

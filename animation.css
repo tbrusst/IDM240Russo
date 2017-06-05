@@ -1,3 +1,54 @@
+.topColor {
+  animation: colorChange 20s infinite;
+  transition: all 2s ease-in-out;
+}
+
+.yellow {
+  fill: #e8c546;
+  transition: all 2s; }
+
+.red {
+  fill: #db2d2c;
+  transition: all 2s; }
+
+.pink {
+  fill: #e1678e;
+  transition: all 2s; }
+
+.blue {
+  fill: #1a367f;
+  transition: all 2s; }
+
+@keyframes colorChange {
+  0%, 16% {
+    fill: #e8c546;
+
+  }
+  25%, 41% {
+    fill: #db2d2c;
+
+  }
+  50%, 66% {
+    fill: #1a367f;
+
+  }
+  75%, 91% {
+    fill: #e1678e;
+
+  }
+  100% {
+    fill: #e8c546;
+
+  }
+}
+
+
+
+
+
+
+
+
 @keyframes firstB {
   0% {
     opacity: 0;
@@ -67,7 +118,7 @@
     /*fill: rgba(0,0,0,0);*/
   }
   100% {
-    opacity: 1;
+    opacity: 0;
     /*fill: #000;*/
   }
 }
@@ -84,11 +135,17 @@
 @keyframes fifthB {
   0% {
     opacity: 0;
+    stroke: black;
+    fill: rgba(0,0,0,0);
   }
   70% {
+    fill: none;
+    stroke: black;
     opacity: 1;
   }
-  87%,100% {
+  100% {
+    fill: none;
+    stroke: black;
     opacity: 0;
   }
 }
@@ -105,6 +162,23 @@
 
 .sixthB {
    opacity: 0;
+}
+
+
+
+#bottom {
+  animation: bot 6.5s forwards;
+}
+
+@keyframes bot {
+  0%,85% {
+    transform: translateY(.25vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px;);
+    opacity: 1;
+  }
 }
 
 
@@ -152,8 +226,9 @@
 
 
 #bottom {
-  animation: bottom 6s forwards;
-
+  animation: bottom 3s forwards;
+  animation-delay: 3.5s;
+  opacity: 0;
 }
 
 @keyframes bottom {
@@ -165,4 +240,11 @@
     transform: translateY(0px;);
     opacity: 1;
   }
+}
+
+
+#up {
+  opacity: 0;
+  animation: bottom 3s forwards;
+  animation-delay: 3.5s;
 }
